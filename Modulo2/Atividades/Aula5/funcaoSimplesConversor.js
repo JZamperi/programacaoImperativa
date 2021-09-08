@@ -8,7 +8,7 @@ console.log(conversor(5));
 function link(url){
     return 'https://www.' + url + '.com.br';
 }
-console.log(link("funcao2"));
+console.log(link("funcaojs"));
 
 // 3. Função Retorna Frase
 function frase(exclamacao){
@@ -56,4 +56,4 @@ function raio(r){
     return 2 * Math.PI * r
 }
 rest = raio(2)
-console.log(rest)
+console.log(rest.toFixed(2));
