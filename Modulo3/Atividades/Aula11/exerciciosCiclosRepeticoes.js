@@ -125,3 +125,43 @@ return comparacoes;
 }
 
 console.table(compararValores(asiaScores,euroScores));
+
+ // -------------- Bônus Extra ---------------------
+//Ctrl D
+
+//gustavo guanabara
+//rocket seat
+
+
+  let a = [5, 8, 4, 9, 5];
+  let b = [8, 7, 8, 6, 8];
+  let c = [7, 5, 10, 8, 3];
+
+  function pontuacaoMedia(media){
+    
+    let soma = 0;
+
+    for (let i = 0; i < media.length; i++) {
+      soma += media[i];
+    }
+
+    return soma/media.length;
+
+  }
+
+console.log (pontuacaoMedia(a));
+
+  function pontuacaoMaior(maior){
+
+    let m = maior[0];
+
+    for (let i = 1; i < maior.length; i++) {
+      if(maior[i] > m){
+        m = maior[i];
+      }
+      return m
+    }
+  }
+console.log (pontuacaoMaior(a))
+
+
