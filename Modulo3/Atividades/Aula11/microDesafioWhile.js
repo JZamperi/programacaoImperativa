@@ -5,10 +5,11 @@
 
 let i = 0;
 while (i <= 100){
-    if (i % 2 != 0){
+    if (i % 2 == 1){
         console.log ("Numero: " + i + " é impar")
     }
-        i++
+ 
+    i++
 }
 console.log ("\n")
 
@@ -34,7 +35,7 @@ function numRecebido(num){
     let m = 0;
 
     while (m <= num){
-        if (m % 2 != 0){
+        if (m % 2 == 1){
             console.log ("Numero: " + m + " é impar")
         } if (m % 2 == 0){
             console.log ("Numero: " + m + " é par")
@@ -51,11 +52,18 @@ console.log ("\n")
 
 //Por fim, o programa mostra a média aritmética da turma.
 
-function mediaTurma(aluno, media){
+function mediaTurma(alunos, medias){
     let i = 0;
+    mediaTotal = 0;
 
-    while (i < media) {
-       mediaTotal = aluno / media;
+    console.log ("Número de Alunos na Sala: " + alunos);
+    while (i < medias) {
+       mediaTotal = medias/alunos;
+       i++;
     }
+    console.log ("Notas dos Alunos: " + mediaTotal + "\n");
+    console.log ('Media Total da Turma: ' + medias);
+    return mediaTotal;
 }
-console.log ('Media Total da Turma: ', mediaTurma(10, 100));
+
+mediaTurma(10, 87);
